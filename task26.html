@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Map Method</title>
+  </head>
+  <body>
+    <h2>The Map.groupBy() Method</h2>
+    <p id="output"></p>
+    <script>
+      const fruits = [
+        { name: "Apple", quantity: 500 },
+        { name: "Banana", quantity: 300 },
+        { name: "Cherry", quantity: 700 },
+        { name: "kiwi", quantity: 350 },
+      ];
+      function myCallback({ quantity }) {
+        return quantity > 400 ? "ok" : "low";
+      }
+      const result = Map.groupBy(fruits, myCallback);
+
+      let text = "These fruits are Ok: <br>";
+      for (let x of result.get("ok")) {
+        text += x.name + " " + x.quantity + "<br>";
+      }
+      text += "These fruits are Low: <br>";
+      for (let x of result.get("low")) {
+        text += x.name + " " + x.quantity + "<br>";
+      }
+      document.getElementById("output").innerHTML = text;
+    </script>
+  </body>
+</html>

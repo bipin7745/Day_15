@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sets</title>
+</head>
+<body>
+    
+<h1>JavaScript Sets</h1>
+<p>Create a set from an array:</p>
+<p id="output"></p>
+<script>
+    const arr1= new Set();
+    arr1.add("a");
+    arr1.add("b");
+    arr1.add("b");
+    arr1.add("b");
+    arr1.add("b");
+    arr1.add("c");
+    
+
+    document.getElementById("output").innerHTML= "The set has " + arr1.size + " values.<br>" + "Sets are dataType:- "+typeof arr1;
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sets Logic</title>
+</head>
+<body>
+
+<h2>The Set.isDisjointFrom() Method</h2>
+<p id="output"></p>
+
+<script>
+const A = new Set(['a','b','c']);
+const B = new Set(['d','e','f']);
+
+let answer = A.isDisjointFrom(B);
+
+document.getElementById("output").innerHTML = "The isDisjointFrom is: " + answer;
+</script>
+</body>
+</html>

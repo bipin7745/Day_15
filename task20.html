@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Map</title>
+  </head>
+  <body>
+    <h1>JavaScript Maps Method</h1>
+    <p>Create a Map Method form array</p>
+    <p id="output"></p>
+    <script>
+      const fruits = new Map();
+      fruits.set("1", "Apple");
+      fruits.set("2", "Banana");
+      fruits.set("3", "Cherry");
+      let numb = fruits.get("3");
+      document.getElementById("output").innerHTML =
+        "The map has fruits  " + numb + " values.";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterators</title>
+</head>
+<body>
+    <h1>The Iterator.flatMap() Method</h1>
+    <p id="output"></p>
+    <script>
+
+        const myIterator = Iterator.from([1,2,3,4,5]);
+        const result = myIterator.flatMap(x=> [x, x * 10]);
+        let text=" ";
+        for (const element of result) {
+            text += element + " ";
+        }
+        document.getElementById("output").innerHTML = text;
+    </script>
+</body>
+</html>
+</html>

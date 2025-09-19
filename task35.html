@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterables</title>
+</head>
+<body>
+<h2>Home Made Iterable</h2>
+<p id="output"></p>
+<script>
+function myNumbers() {
+  let n = 0;
+  return {
+    next: function() {
+      n += 10;
+      return {value:n, done:false};
+    }
+  };
+}
+
+const n = myNumbers();
+n.next(); 
+n.next(); 
+n.next(); 
+document.getElementById("output").innerHTML = n.next().value;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loops</title>
+</head>
+<body>
+    <h1>For...Loop patten print</h1>
+    <p id="output"></p>
+    <script>
+        let text = " ";
+        for (let i=1;i<=5;i++){
+            for (let j=1;j<=i;j++){
+                text+="*";
+               
+            } 
+            text+="<br>";
+        }
+        for (let i=1;i<=5;i++){
+
+            for (let j=i;j<=5;j++){
+                text+="*";
+            } 
+            text+="<br>";
+        }
+        document.getElementById("output").innerHTML = text;
+    </script>
+</body>
+</html>

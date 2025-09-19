@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterators</title>
+</head>
+<body>
+    <h1>The Iterator.every() Method</h1>
+    <p id="output"></p>
+    <script>
+
+        const myIterator = Iterator.from([123456789]);
+        const result = myIterator.every(x => x > 7);
+
+        document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html>

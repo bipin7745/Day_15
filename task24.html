@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Map Method</title>
+</head>
+<body>
+<h2>The forEach() Method</h2>
+    <p id="output"></p>
+    <script>
+        const fruits = new Map();
+        fruits.set("Apple", "500");
+        fruits.set("Banana", "300");
+        fruits.set("Cherry", "700");
+        let text="";
+        fruits.forEach(function(value, key) {
+            text += key + ' = ' + value + '<br>';
+        });
+       document.getElementById("output").innerHTML =text;
+        </script>
+</body>
+</html>

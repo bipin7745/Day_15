@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript for of Loop</title>
+</head>
+<body>
+    <h1>JavaScript for of Loop</h1>
+    <p id="output"></p>
+    <script>
+        let text="";
+        const cars = ["BMW", "Volvo", "Saab", "Ford"];
+        letvalue="JavaScript";
+        for (let car of cars) {
+            text += car + "<br>";
+        }
+    text+="<br>";
+        for (let x of letvalue){
+            text+=x+" ";
+        }
+        document.getElementById("output").innerHTML = text;
+    </script>
+</body>
+</html>

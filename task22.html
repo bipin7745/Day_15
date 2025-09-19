@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Map Method</title>
+</head>
+<body>
+<h2>The Maps size Property and delete Method </h2>
+    <p id="output"></p>
+    <script>
+        const fruits = new Map();
+        fruits.set("1", "Apple");
+        fruits.set("2", "Banana");
+        fruits.set("3", "Cherry");
+        fruits.delete("2");
+        document.getElementById("output").innerHTML = fruits.size;
+        </script>
+</body>
+</html>

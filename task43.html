@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterators</title>
+</head>
+<body>
+    <h1>The Iterator.reduce() Method</h1>
+    <p id="output"></p>
+    <script>
+function myFunc(total, num) {
+  return total + num;
+}
+        const myIterator = Iterator.from([3, 10, 18, 30, 20]);
+        const result = myIterator.reduce(myFunc);
+
+        document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html>
+</html>

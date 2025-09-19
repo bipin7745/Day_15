@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loops</title>
+</head>
+<body>
+    <h1>For...Loop</h1>
+    <p>Array and All Characters</p>
+    <p id="output"></p>
+    <script>
+        const fruits = ["Apple", "Banana", "Cherry", "Mango", "Pineapple"];
+        let text = "";
+        for (let i = 0; i < fruits.length; i++) {
+            text += fruits[i] + "<br>";
+        }
+        text+="<br>";
+        for (let i=65;i<=90;i++){
+            text+=String.fromCharCode(i)+"    ";
+        }
+        document.getElementById("output").innerHTML = text;
+    </script>
+</body>
+</html>

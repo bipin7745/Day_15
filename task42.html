@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterators</title>
+</head>
+<body>
+    <h1>The Iterator.find() Method</h1>
+    <p id="output"></p>
+    <script>
+
+        const myIterator = Iterator.from([3, 10, 18, 30, 20]);
+        const result = myIterator.find(x => x > 18);
+
+        document.getElementById("output").innerHTML = result;
+    </script>
+</body>
+</html>
+</html>

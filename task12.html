@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sets Logic</title>
+</head>
+<body>
+
+<h2>The Set.difference() Method</h2>
+<p id="output"></p>
+
+<script>
+const A = new Set(['a','b','c']);
+const B = new Set(['b','c','d']);
+
+const C = A.difference(B);
+
+let text = "";
+for (const a of C) {
+  text += a + " ";
+}
+document.getElementById("output").innerHTML = "The difference is: " + text;
+</script>
+</body>
+</html>

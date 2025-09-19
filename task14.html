@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Sets Logic</title>
+</head>
+<body>
+
+<h2>The Set.isSubsetOf() Method</h2>
+<p id="output"></p>
+
+<script>
+const fours = new Set([4, 8, 12, 16]);
+const evens = new Set([4, 8, 12, 14, 16, 18]);
+
+const C = fours.isSubsetOf(evens);
+
+
+document.getElementById("output").innerHTML = "The isSubsetOf is: " + C;
+</script>
+</body>
+</html>

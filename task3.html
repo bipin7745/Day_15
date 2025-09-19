@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Inheritance</title>
+</head>
+<body>
+   <h1>JavaScript Class Getter/Setter</h1>
+   <p id="output"></p>
+   <script>
+    class Car{
+        constructor(brand){
+            this._carname=brand;
+        }
+        get carn(){
+           return this._carname;
+        }
+        set carn(x){
+            this._carname=x;
+        }
+    }
+    const mycar1=new Car("Audi");
+    document.getElementById("output").innerHTML=mycar1.carn;
+   </script>
+</body>
+</html>

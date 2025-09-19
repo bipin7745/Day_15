@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Set Logic </title>
+</head>
+<body>
+
+<h2>The Set.intersection() Method</h2>
+<p id="output"></p>
+
+<script>
+const A = new Set(['a','b','c']);
+const B = new Set(['b','c','d']);
+
+const C = A.intersection(B);
+
+let text = "";
+for (const x of C) {
+  text += x + " ";
+}
+document.getElementById("output").innerHTML = "The intersection is: " + text;
+</script>
+</body>
+</html>

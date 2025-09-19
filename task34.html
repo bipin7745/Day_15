@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Iterables</title>
+  </head>
+  <body>
+    <h1>JavaScript Iterables</h1>
+    <p id="output"></p>
+    <script>
+      const name = "HiHelloeveryone";
+      const arr = [1, 2, 3, 4, 5];
+      const cars = new Set(["BMW", "Volvo", "Saab", "Ford"]);
+      const fruits = new Map([  
+        ["1", "Apple"],
+        ["2", "Banana"],
+        ["3", "Cherry"],
+      ]);
+
+      let text = "";
+      for (const x of name) {
+        text += x + "&nbsp;&nbsp;";
+      }
+        text += "<br><br>";
+        for (const x of arr) {  
+            text += x + "&nbsp;&nbsp;";
+        }
+        text += "<br><br>";
+        for (const x of cars) {  
+            text += x + "&nbsp;&nbsp;";
+        }   
+        text += "<br><br>";
+        for (const x of fruits) {  
+            text += x + "&nbsp;&nbsp;";
+        }
+      
+
+      document.getElementById("output").innerHTML = text;
+    </script>
+  </body>
+</html>

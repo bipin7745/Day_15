@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript   Loop</title>
+</head>
+<body>
+    <h1>JavaScript For In Loop</h1>
+    <p id="output"></p>
+    <script>
+        let person={
+           FirstName:"Bipin",
+           LastName:"Kanjariya",
+           Age:20,
+           City:"botad"
+        }
+        let text = "";
+        for(let key in person){
+            text += key + ": " + person[key] + "<br>";
+        }
+        document.getElementById("output").innerHTML = text;
+    </script>
+</body>
+</html>
